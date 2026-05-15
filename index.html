@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Perspec — калькулятор FPS</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Perspec FPS Calculator</h1>
+    <p class="subtitle">Оцени примерный FPS в играх по характеристикам вашего ПК.</p>
+
+    <section class="card">
+      <form id="fps-form" class="form-grid">
+        <label>
+          Игра
+          <select id="game" required></select>
+        </label>
+
+        <label>
+          Процессор (CPU)
+          <select id="cpu" required></select>
+        </label>
+
+        <label>
+          Видеокарта (GPU)
+          <select id="gpu" required></select>
+        </label>
+
+        <label>
+          Оперативная память (RAM)
+          <select id="ram" required>
+            <option value="8">8 GB</option>
+            <option value="16" selected>16 GB</option>
+            <option value="32">32 GB</option>
+            <option value="64">64 GB</option>
+          </select>
+        </label>
+
+        <label>
+          Разрешение
+          <select id="resolution" required>
+            <option value="1080p" selected>1920×1080 (1080p)</option>
+            <option value="1440p">2560×1440 (1440p)</option>
+            <option value="4k">3840×2160 (4K)</option>
+          </select>
+        </label>
+
+        <label>
+          Качество графики
+          <select id="quality" required>
+            <option value="low">Низкое</option>
+            <option value="medium" selected>Среднее</option>
+            <option value="high">Высокое</option>
+            <option value="ultra">Ультра</option>
+          </select>
+        </label>
+
+        <button type="submit">Рассчитать FPS</button>
+      </form>
+    </section>
+
+    <section id="result" class="card hidden" aria-live="polite">
+      <h2>Результат</h2>
+      <p id="fps-output"></p>
+      <p id="details" class="muted"></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
