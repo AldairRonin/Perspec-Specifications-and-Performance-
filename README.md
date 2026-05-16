@@ -1,2 +1,11 @@
 # Perspec (Specifications-and-Performance)
-A web application that estimates game performance (e.g., FPS) for a user’s PC based on data shared by other users with similar configurations.
+
+Простой веб-сайт, который оценивает примерный FPS в популярных играх на основе выбранных характеристик ПК пользователя.
+
+## Что реализовано
+- Выбор игры, CPU, GPU, объёма RAM, разрешения и качества графики.
+- Расчёт примерного среднего FPS и 1% Low.
+- Адаптивный интерфейс без зависимостей (чистые HTML/CSS/JS).
+
+## Запуск
+Откройте `index.html` в браузере.
